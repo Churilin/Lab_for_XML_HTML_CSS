@@ -1,0 +1,10 @@
+    <!ELEMENT lessons (teacher+)>
+    <!ELEMENT teacher (Name, LastName, PatronymicName, Discipline, Post, PeriodOfStudy, FinalTest)>
+    <!ATTLIST teacher id CDATA #REQUIRED>
+    <!ELEMENT Name (#PCDATA)>
+    <!ELEMENT LastName (#PCDATA)>
+    <!ELEMENT PatronymicName (#PCDATA)>
+    <!ELEMENT Discipline (#PCDATA)>
+    <!ELEMENT Post (#PCDATA)>
+    <!ELEMENT PeriodOfStudy (#PCDATA)>
+    <!ELEMENT FinalTest (#PCDATA)>

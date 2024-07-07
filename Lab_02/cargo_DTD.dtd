@@ -1,0 +1,12 @@
+<!ELEMENT cargo SYSTEM "cargo_DTD.dtd">
+<!ELEMENT cargo (company+)>
+<!ELEMENT company (TypeOfCargo, CargoWeight, CargoVolume, WorkPlace, Address, Phone, СostOfTransportation)>
+<!ATTLIST company id CDATA #REQUIRED>
+<!ELEMENT TypeOfCargo (#PCDATA)>
+<!ELEMENT CargoWeight (#PCDATA)>
+<!ELEMENT CargoVolume (#PCDATA)>
+<!ELEMENT WorkPlace (#PCDATA)>
+<!ELEMENT Address (#PCDATA)>
+<!ELEMENT Phone (#PCDATA)>
+<!ELEMENT СostOfTransportation (#PCDATA)>
+<!ATTLIST СostOfTransportation currency CDATA #REQUIRED>
