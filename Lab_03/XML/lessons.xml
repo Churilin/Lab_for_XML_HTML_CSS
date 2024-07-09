@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lessons xmlns="http://www.w3.org/2001/XMLShema-instance" xsi:noNamespaceSchemaLocation="lessons_XML.xsd">
+    <teacher id = "a">
+        <Name>Никита</Name>
+        <LastName>Осипов </LastName>
+        <PatronymicName>Алексеевич</PatronymicName>
+        <Discipline>Технологии программирования</Discipline>
+        <Post>доцент</Post>
+        <PeriodOfStudy> 25.03.2024 - 16.04.2024</PeriodOfStudy>
+        <FinalTest>зачет</FinalTest>
+    </teacher>  
+
+    <teacher id = "b">
+        <Name>Ирина</Name>
+        <LastName>Осетрова </LastName>
+        <PatronymicName>Станиславовна</PatronymicName>
+        <Discipline>Введение в базы данных</Discipline>
+        <Post>старший преподаватель</Post>
+        <PeriodOfStudy> 18.04.2024 - 07.05.2024</PeriodOfStudy>
+        <FinalTest>зачет</FinalTest>
+    </teacher>  
+
+    <teacher id = "c">
+        <Name>Денис</Name>
+        <LastName>Викторович </LastName>
+        <PatronymicName>Ямщиков</PatronymicName>
+        <Discipline>PL/pgSQL и реализация баз данных PostgreSQL</Discipline>
+        <Post>старший преподаватель</Post>
+        <PeriodOfStudy> 03.06.2024 - 28.06.2024</PeriodOfStudy>
+        <FinalTest>экзамен</FinalTest>
+    </teacher>  
+</lessons>

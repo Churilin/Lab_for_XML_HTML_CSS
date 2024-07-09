@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:simpleType name="Phone">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\d{3}-\d{2}-\d{2}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="CargoWeightType">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1"/>
+            <xs:maxInclusive value="10000"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="CargoVolumeType">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1"/>
+            <xs:maxInclusive value="10"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="CostOfTransportationType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\d{1,5}\s\d{3}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:element name="cargo">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="company" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="TypeOfCargo" type="xs:string"/>
+                            <xs:element name="CargoWeight" type="CargoWeightType"/>
+                            <xs:element name="CargoVolume" type="CargoVolumeType"/>
+                            <xs:element name="WorkPlace" type="xs:string"/>
+                            <xs:element name="Address" type="xs:string"/>
+                            <xs:element name="Phone" type="Phone"/>
+                            <xs:element name="CostOfTransportation" type="CostOfTransportationType"/>
+                        </xs:sequence>
+                        <xs:attribute name="id" type="xs:string" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

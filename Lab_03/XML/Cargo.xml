@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cargo xmlns:xsi="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="Cargo_XML.xsd">
+    <company id = "a">
+        <TypeOfCargo>ТНП</TypeOfCargo>
+        <CargoWeight>1500</CargoWeight>
+        <CargoVolume>3</CargoVolume>
+        <WorkPlace>ООО "Мегамаркет"</WorkPlace>
+        <Address> СПб, ул. Фучика 15</Address> 
+        <Phone> 912-13-15</Phone>
+        <СostOfTransportation currency = "RUR">12 500</СostOfTransportation>
+    </company>
+
+    <company id = "b">
+        <TypeOfCargo>Рулоны</TypeOfCargo>
+        <CargoWeight>800</CargoWeight>
+        <CargoVolume>5</CargoVolume>
+        <WorkPlace>АО "Солюшенс"</WorkPlace>
+        <Address> СПб, Парголово, 1-й Верхний переулок 7</Address> 
+        <Phone> 823-54-74</Phone>
+        <СostOfTransportation currency = "RUR">19 000</СostOfTransportation>
+    </company>
+
+    <company id = "c">
+        <TypeOfCargo>Стройматериалы</TypeOfCargo>
+        <CargoWeight>4000</CargoWeight>
+        <CargoVolume>2</CargoVolume>
+        <WorkPlace>ООО "Сторойудача"</WorkPlace>
+        <Address> СПб, ул. Металлистов 44</Address> 
+        <Phone> 567-41-99</Phone>
+        <СostOfTransportation currency = "RUR">22 000</СostOfTransportation>
+    </company>
+</cargo>
